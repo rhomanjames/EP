@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&family=Playwrite+ES+Deco:wght@100..400&display=swap');
+
+html {
+    padding-top: 1rem;
+}
+
+body {
+    background: #002559;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  animation: colorChange 9s infinite; /* Apply the animation */
+  transition: background-color 1s ease; /* Smooth transition */
+}
+
+.color-changing-text {
+    animation: colorChangeText 9s infinite; /* Apply the animation */
+}
+
+@keyframes colorChangeText {
+  0% { color: #002559; } /* Initial color */
+  45% { color: #3858a7; } /* Intermediate color */
+  80% { color: #00a79d; } /* Final color */
+  100% { color: #002559; } /* Back to initial color */
+}
+
+
+.fancy-text {
+    font-family: "Playwrite CO", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+header {
+    background: white;
+    margin-right: 2rem;
+    position: sticky;
+    margin-left: 2rem;
+    top: 10px;
+    border-radius: 16px;
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    padding: 1rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), 
+    0px 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.nav-item {
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.btn {
+    border: none;
+    color: #002559;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background: #ffdd16;
+    color: #002559;
+    transition: .3s;
+
+}
+
+.floating-image {
+display: block;
+  margin: 50px auto;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-image:hover {
+  transform: scale(1.05);
+}
+
+
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #002559;
+    color: #ffdd16;
+    animation: colorChange 9s infinite; /* Apply the animation */
+}
+
+@keyframes colorChange {
+    0% { background-color: #002559; } /* Initial color */
+    33% { background-color: #3858a7; } /* Intermediate color */
+    66% { background-color: #00a79d; } /* Final color */
+    100% { background-color: #002559; } /* Back to initial color */
+  }
+
+.btn-2 {
+    background: white;
+    color: #002559;
+    padding: .5rem;
+  
+    border-radius: 8px;
+}
+
+.color-changing-text {
+    transition: color 1s ease-in-out; /* Smooth transition for color change */
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section div {
+    width: 50%;
+    padding: 3rem;
+    color: white;
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    color: #002559;
+    padding: 2rem;
+
+}
+
+.about h1 {
+    color: #002559;
+    margin-top: 0;
+}
+
+.about p {
+    color: #00a79d;
+    max-width: 750px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: .5rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.785);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(255, 255, 255, 0.58);
+    width: 300px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 3px solid #ffdd16;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 8px;
+    width: fit-content;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #002559;
+    
+}
+
+.card-description {
+    font-size: 1em;
+    color: #2980b9;
+    width: 250px;
+
+    display: none;
+}
+
+.card-btn {
+    display: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #2980b9;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+}
