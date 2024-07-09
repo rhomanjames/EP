@@ -306,18 +306,22 @@ h2 {
 
 .card {
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.785);
+background: #002559;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.9px);
 -webkit-backdrop-filter: blur(6.9px);
-border: 1px solid rgba(255, 255, 255, 0.58);
-width: fit-content;
+border: 3px solid rgb(255, 255, 255);
+width: auto;
     transition: transform 0.2s;
     cursor: pointer;
     border: 3px solid transparent;
-    margin-right: 20px;
-    text-align: center;
+    animation: colorChangeCard 15s infinite; /* Apply the animation */
+}
+
+
+.card h2 {
+    padding-left: 0;
 }
 
 
@@ -335,21 +339,19 @@ width: fit-content;
 .card-content {
     padding: 4px;
     width: fit-content;
-    text-align: center;
 }
 
 .card-title {
     font-size: 1.5em;
-    margin: 0 0 10px;
-    color: #002559;
+    color: white;
     text-align: center;
+    width: 100%;
     
 }
 
 .card-description {
     font-size: 1em;
     color: #2980b9;
-    width: 250px;
 
     display: none;
 }
@@ -380,6 +382,7 @@ width: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     text-align: center;
+    width: auto;
 }
 
 
