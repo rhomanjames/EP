@@ -62,6 +62,30 @@ header {
     z-index: 1000;
 }
 
+
+.sub-nav {
+    display: none;
+}
+
+.shop-nav:hover + .sub-nav {
+    display: block;
+}
+
+footer {
+    background: white;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    padding: 1rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1), 
+    0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .nav-item {
     margin-right: 1rem;
     font-size: 1.25rem;
@@ -388,8 +412,8 @@ width: auto;
 
 
 .wavy-border {
-    border-top: 20px solid;
-    border-bottom: 20px solid;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
     border-image: url('wavy-border.svg') 30 round;
     padding: 20px;
     text-align: center;
